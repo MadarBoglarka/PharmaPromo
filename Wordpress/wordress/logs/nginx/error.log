@@ -1,0 +1,1 @@
+2024/03/20 13:18:42 [error] 38046#0: *1 directory index of "/Users/boglarkamadar/Local Sites/wordress/app/public/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", host: "wordress.local"
