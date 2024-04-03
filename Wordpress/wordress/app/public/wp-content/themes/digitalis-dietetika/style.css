@@ -61,4 +61,63 @@ Version: 1.0 */
   #eff8ff;
   --dark-grey: rgb(175,186,186);
   --light-grey:#b9c0c6;
+}
+
+/*footer style */
+footer {
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+footer .footer-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: end;
+  margin: 0;
+  padding: 0;
+  height: 23vh;
+}
+footer .footer-wrap .footer-menu-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: left;
+  padding: 50px;
+}
+footer .footer-wrap .footer-menu-wrap nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .footer-wrap .footer-menu-wrap nav ul li {
+  display: inline-block; /* Elemek egymás mellé rendezése */
+  margin-right: 10px;
+}
+footer .footer-wrap .footer-menu-wrap nav ul li a {
+  text-decoration: none;
+  color: var(--dark-grey);
+  font-family: "SourceSansPro-Bold", sans-serif;
+  font-size: 14px;
+  padding: 10px;
+}
+footer .footer-wrap .footer-logo-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 40px 40px 35px 200px;
+}
+footer .footer-wrap .footer-logo-wrap .footer-logo {
+  width: 160px;
+}
+footer .separator {
+  width: 101%;
+  height: 19vh;
+  background-color: var(--light-blue-color);
+  bottom: 0;
+  left: 0;
+  -webkit-clip-path: ellipse(50% 100% at 50% 0);
+          clip-path: ellipse(50% 100% at 50% 0);
 }/*# sourceMappingURL=style.css.map */
