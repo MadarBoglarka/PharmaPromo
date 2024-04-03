@@ -59,13 +59,18 @@ Version: 1.0 */
     --light-blue-color:
     #eff8ff;
     --dark-grey: rgb(175,186,186);
+    --dark-grey2:#909ca5;
     --light-grey:#b9c0c6;
+    --white:#fff;
+    --light-blue: #25c8ed;
+    --dark-blue:#328cf3;
+    --green:#39c5a8;
   }
 
 /*footer style */
 
 footer {
-    background-color: #fff;
+    background-color: var(--white);
     padding: 20px;
     position: relative;
     margin: 0;
@@ -150,8 +155,8 @@ footer {
             padding: 20px;
             font-family: "SourceSansPro-Regular";
             a{
-                color: #25c8ed;
-                border-bottom: #25c8ed 1px solid;
+                color: var(--light-blue);
+                border-bottom: var(--light-blue) 1px solid;
             }
         }
         .bejelentkezes-label {
@@ -175,7 +180,7 @@ footer {
             width: 130%;
             padding: 10px;
             border-radius: 8px;
-            color: #909ca5;
+            color: var(--dark-grey2);
             margin: -16px;
             box-shadow: 0px 0px 8px 0px rgba(175, 186, 186, 0.3);
             &::placeholder {
@@ -188,8 +193,8 @@ footer {
     .regisztracio-button {
         width: 200px;
         padding: 15px 20px;
-        background: linear-gradient(to right, #25c8ed, #328cf3);
-        color: #fff;
+        background: linear-gradient(to right, var(--light-blue), var(--dark-blue));
+        color:  var(--white);
         border: none;
         border-radius: 32px;
         cursor: pointer;
@@ -271,7 +276,7 @@ footer {
       width: 96%;
       padding: 10px;
       border-radius: 8px;
-      color: #909ca5;
+      color: var(--dark-grey2);
      
       box-shadow: 0px 0px 8px 0px rgba(175, 186, 186, 0.3);
       &::placeholder {
@@ -284,7 +289,7 @@ footer {
             width: 100%;
             padding: 10px;
             border-radius: 8px;
-            color: #909ca5;
+            color: var(--dark-grey2);
             box-shadow: 0px 0px 8px 0px rgba(175, 186, 186, 0.3);
             &::placeholder {
                 color: var(--light-grey);
@@ -294,8 +299,8 @@ footer {
       input[type="submit"]{
           width: 150px;
           padding: 15px 20px;
-          background: linear-gradient(to right, #25c8ed, #328cf3);
-          color: #fff;
+          background: linear-gradient(to right, var(--light-blue), var(--dark-blue));
+          color: var(--white);
           border: none;
           border-radius: 32px;
           cursor: pointer;
@@ -314,8 +319,8 @@ footer {
       text-align: center;
       z-index: 1;
       a{
-        color: #25c8ed;
-        border-bottom: #25c8ed 1px solid;
+        color: var(--light-blue);
+        border-bottom: var(--light-blue) 1px solid;
         margin-right: 30px;
      }
       p{
@@ -362,7 +367,7 @@ footer {
       transition: .4s;
     }
     input:checked + .slider {
-      background-color: #39c5a8;
+      background-color: var(--green);
     }
     input:checked + .slider:before {
       -webkit-transform: translateX(16px);
