@@ -1,1 +1,64 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/* Theme Name: Digitális Dietetika
+Author: Madar Boglárka
+Description: A custom WordPress theme.
+Version: 1.0 */
+@font-face {
+  font-family: "SourceSansPro-Black";
+  src: url("./assets/fonts/SourceSansPro-Black.otf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-BlackIt";
+  src: url("./assets/fonts/SourceSansPro-BlackIt.otf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url("./assets/fonts/SourceSansPro-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-Boldlt";
+  src: url("./assets/fonts/SourceSansPro-Boldltk.otf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-ExtraLight";
+  src: url("./assets/fonts/SourceSansPro-ExtraLight.otf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-ExtraLightlt";
+  src: url("./assets/fonts/SourceSansPro-ExtraLightlt.otf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-lt";
+  src: url("./assets/fonts/SourceSansPro-lt.otf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-Light";
+  src: url("./assets/fonts/SourceSansPro-Light.otf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-Lightlt";
+  src: url("./assets/fonts/SourceSansPro-Lightlt.otf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("./assets/fonts/SourceSansPro-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-Semibold";
+  src: url("./assets/fonts/SourceSansPro-Semibold.otf") format("truetype");
+}
+@font-face {
+  font-family: "SourceSansPro-Semiboldlt";
+  src: url("./assets/fonts/SourceSansPro-Semiboldlt.otf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --light-blue-color:
+  #eff8ff;
+  --dark-grey: rgb(175,186,186);
+  --light-grey:#b9c0c6;
+}/*# sourceMappingURL=style.css.map */
