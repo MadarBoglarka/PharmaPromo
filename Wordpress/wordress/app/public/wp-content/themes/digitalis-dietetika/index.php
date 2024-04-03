@@ -107,3 +107,29 @@ if ( ! $current_user->ID ) {
     }
   });
 </script>
+
+<?php
+}
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["vname"], $_POST["kname"], $_POST["tel"], $_POST["email"], $_POST["message"])) {
+
+  if (isset($_POST['accept']) && $_POST['accept'] == '1') {
+      $kname = sanitize_text_field($_POST["kname"]);
+      $vname = sanitize_text_field($_POST["vname"]);
+      $email = sanitize_email($_POST["email"]);
+      $tel = sanitize_email($_POST["tel"]);
+      $message = esc_textarea($_POST["message"]);
+
+      $to = 'your@example.com';
+      $subject = 'Új üzenet érkezett';
+      $body = "Név: $vname,$kname\nEmail: $email\nÜzenet:\n$message\n Tel.:\n$tel";
+      $headers = array('Content-Type: text/html; charset=UTF-8');
+
+      wp_mail($to, $subject, $body, $headers);
+  } else {
+      echo 'Kérjük, fogadja el az adatvédelmi nyilatkozatot a küldés előtt.';
+  }
+} ?>
+<?php get_footer(); ?>
+
