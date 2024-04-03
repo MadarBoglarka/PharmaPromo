@@ -99,4 +99,11 @@ if ( ! $current_user->ID ) {
    
   </div>
 
-<script>
+  <script>
+  document.getElementById('submit-btn').addEventListener('click', function(event) {
+    if (!document.querySelector('input[name="accept"]').checked) {
+        event.preventDefault(); 
+        alert('Kérjük, fogadja el az adatvédelmi nyilatkozatot a küldés előtt.');
+    }
+  });
+</script>
