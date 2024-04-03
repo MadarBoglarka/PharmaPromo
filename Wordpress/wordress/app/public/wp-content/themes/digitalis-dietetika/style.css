@@ -393,4 +393,51 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .img-wrap {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .img-wrap .kedo-img {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+  }
+  .bejelentkezes-wrap {
+    text-align: center; /* A tartalmat középre igazítja */
+    align-items: center;
+    height: 40vh;
+  }
+  .footer-wrap .footer-menu-wrap {
+    padding: 10px;
+  }
+  .bejelentkezett-img-wrap {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 20vh;
+  }
+  .bejelentkezett-img-wrap .bejelentkezett-img {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  .bejelentkezett-wrap {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* A tartalmat középre igazítja */
+    align-items: center;
+    height: 80vh;
+  }
+  .bejelentkezett-wrap .bejelentkezes-title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
