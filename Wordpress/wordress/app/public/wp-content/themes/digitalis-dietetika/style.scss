@@ -121,3 +121,104 @@ footer {
      clip-path: ellipse(50% 100% at 50% 0); 
  }
 }
+/* index.php bejelentkezes */
+
+.bejelentkezes-wrap {
+    background-color: var(--light-blue-color);
+    margin: 0 auto;
+    padding: 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    height:  58vh;
+    .bejelentkezes-title {
+        color: var(--dark-grey);
+        font-family: "SourceSansPro-Regular";
+        align-self: center;
+        margin-bottom: 0;
+    }
+    .bejelentkezes-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0 0 0 20px;
+        padding: 0;
+        .bejelentkezes-forgetten{
+            font-size: 14px;
+            color: var(--dark-grey);
+            padding: 20px;
+            font-family: "SourceSansPro-Regular";
+            a{
+                color: #25c8ed;
+                border-bottom: #25c8ed 1px solid;
+            }
+        }
+        .bejelentkezes-label {
+            color: var(--light-grey);
+            font-family: "SourceSansPro-Regular";
+            text-align: left;
+            align-self: flex-start;
+            padding-top: 8px; // változás: padding helyett padding-top, hogy ne legyen padding a bal oldalon
+            margin-left: -15%; // opcionális: ez az eltolás marad, de meg kell gondolni, hogy a tartalom változásával ez nem biztos, hogy stabil marad
+            font-size: 11px;
+            &::placeholder {
+                color: var(--light-grey);
+                font-family: "SourceSansPro-Regular";
+            }
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea {
+            border: none;
+            width: 130%;
+            padding: 10px;
+            border-radius: 8px;
+            color: #909ca5;
+            margin: -16px;
+            box-shadow: 0px 0px 8px 0px rgba(175, 186, 186, 0.3);
+            &::placeholder {
+                color: var(--light-grey);
+                font-family: "SourceSansPro-Regular";
+            }
+        }
+    }
+    input[type="submit"],
+    .regisztracio-button {
+        width: 200px;
+        padding: 15px 20px;
+        background: linear-gradient(to right, #25c8ed, #328cf3);
+        color: #fff;
+        border: none;
+        border-radius: 32px;
+        cursor: pointer;
+        margin: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(175, 186, 186, 3);
+
+        &.regisztracio-button {
+            background: var(--dark-grey);
+        }
+    }
+}
+
+/* kezo img*/
+.img-wrap {
+    background-color: var(--light-blue-color);
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:end ;
+    text-align: center;
+    height: 58vh;
+    min-width: 200px;
+    .kedo-img {
+        display: flex;
+        flex-direction: row;
+        margin: 100px 20px 0 0;
+        width: 670px;
+        z-index: 100;
+    }
+}
